@@ -1,11 +1,14 @@
 import React from 'react';
+import { EditorProvider } from './context/context';
 import './App.css';
+
+import CodeBar from './components/CodeBar/CodeBar';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <EditorProvider>
+      <CodeBar />
+    </EditorProvider>
   );
 }
 
